@@ -27,7 +27,7 @@ I'm Deep Shetye. I Spend most of time learning and coding.
 
 <br />
 
-#### Bizness
+#### Details
 - :paperclip: [My Resume/CV](https://docs.google.com/document/d/191dXBjJZNuix3A3XkyCjZLBXkotv4Ha3GZibad4x6VQ/edit?usp=sharing)
 - :email: deepshetye1@gmail.com
 

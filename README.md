@@ -15,7 +15,7 @@ I'm Deep Shetye. I Spend most of time learning and coding.
 - 🤔 I’m always looking for opportunities.
 - 📫 How to reach me: deepshetye1@gmail.com.
 - 👀 I’m interested in Web Development, Android Development
-- ⚡ Fun fact: I love listening songs while coding and sometimes i sing.
+- ⚡ Fun fact: I love listening to songs while coding and sometimes i sing.
 
 <br />
 

@@ -6,7 +6,6 @@ import ImageContent from './ImageContent';
 const Container = styled.div`
     display: flex;
     flex-flow: row nowrap;
-    /* border: 1px dashed red; */
 `;
 
 class Work extends Component {
@@ -30,45 +29,31 @@ class Work extends Component {
       },
       {
         number: '01',
-        projectName: 'Voistrap',
+        projectName: 'EdTech',
         projectDesc: 'IoT project to give workplace insights using indoor localization, voice and schedule.',
-        projectType: 'iOS APP',
+        projectType: 'WEB APP',
         roles: ['Full Stack Developer', 'UI Designer'],
       },
       {
         number: '02',
-        projectName: 'WhatsMyFood',
+        projectName: 'EdTech',
         projectDesc: 'iOS app to remember your fav food at each restaurant you eat.',
-        projectType: 'iOS APP',
+        projectType: 'CROSS PLATFORM APP',
         roles: ['Front-end Developer', 'UI Designer'],
       },
       {
         number: '03',
-        projectName: 'ComingOrNot',
+        projectName: 'EdTech Dashboard',
         projectDesc: 'Event planner web app that strives to ease the work of an organizer, conduct events in a less chaotic way.',
         projectType: 'WEB APP',
         roles: ['Front-end Developer', 'UI Designer'],
       },
       {
         number: '04',
-        projectName: 'Tesla app',
+        projectName: 'Clubhouse Clone',
         projectDesc: 'iOS app concept to control Tesla cars remotely.',
-        projectType: 'iOS APP CONCEPT',
+        projectType: 'WEB APP',
         roles: ['UI Designer'],
-      },
-      {
-        number: '05',
-        projectName: 'Video portal',
-        projectDesc: 'Internal video portal to deliver news to employees all over the world.',
-        projectType: 'WEB APP',
-        roles: ['Full Stack Developer', 'UI Designer'],
-      },
-      {
-        number: '06',
-        projectName: 'Voistrap demo',
-        projectDesc: 'Web app project to give workplace insights using indoor localization, voice and schedule.',
-        projectType: 'WEB APP',
-        roles: ['Full Stack Developer', 'UI Designer'],
       },
       {
         number: '',

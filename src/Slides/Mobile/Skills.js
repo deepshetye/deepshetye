@@ -86,26 +86,22 @@ class Skills extends Component {
             <br />
             Node.js
             <br />
+            Firebase
             <br />
-            Rapid Prototyping
+            MongoDB
             <br />
-            Functional Programming
-            <br />
-            Interaction Development
-            <br />
-            <br />
-            Responsive Design
-            <br />
-            Testing & Debugging
-            <br />
-            Application Architecture
+            Express
             <br />
             <br />
-            Sketch
+            C/C++
             <br />
-            Principle
+            JavaScript
             <br />
-            Abstract
+            Python
+            <br />
+            HTML
+            <br />
+            CSS
             <br />
           </div>
         </SkillsList>

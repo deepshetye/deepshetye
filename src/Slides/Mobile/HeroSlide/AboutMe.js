@@ -43,8 +43,9 @@ class AboutMe extends Component {
     return (
       <Container>
         <AboutMeDescription>
-          Front-end developer who cares deeply about user experience.
-          Serious passion for UI design and new technologies.
+          19 Year Old Indian.
+          Currently pursuing my BTech degree in ECE Branch from NIT Goa.
+          I spend most my time learning and coding.
         </AboutMeDescription>
       </Container>
     );

@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import device from '../../Assets/Responsive/breakpoints';
 
 const Container = styled.div`
-    height: 120vh;/* Since pageSplitTime is 1.4 */
+    height: 100vh;/* Since pageSplitTime is 1.4 */
     width:100%;
-    /* border: 1px solid blue; */
     position: relative;
     overflow: hidden;
 `;
@@ -33,7 +32,6 @@ const SkillsTitle = styled.div.attrs({
 `;
 
 const SkillsList = styled.div`
-  /* border: 1px solid #EFEFEF; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -101,27 +99,23 @@ class Skills extends Component {
             <br />
             Node.js
             <br />
+            Firebase
             <br />
-            Rapid Prototyping
+            MongoDB
             <br />
-            Functional Programming
-            <br />
-            Interaction Development
+            Express
             <br />
           </div>
           <div>
-            Responsive Design
+            C/C++
             <br />
-            Testing & Debugging
+            JavaScript
             <br />
-            Application Architecture
+            Python
             <br />
+            HTML
             <br />
-            Sketch
-            <br />
-            Principle
-            <br />
-            Abstract
+            CSS
             <br />
           </div>
         </SkillsList>

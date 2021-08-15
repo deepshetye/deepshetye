@@ -1,17 +1,15 @@
 {
-  "name": "my_portfolio",
+  "name": "porfolio",
   "version": "1.0.0",
-  "description": "Suresh Murali's Portfolio",
+  "description": "Deep Shetye's Portfolio",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "deploy": "git subtree push --prefix docs origin gh-pages",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "start": "react-scripts start"
   },
-  "author": "Suresh Murali",
-  "license": "MIT",
+  "author": "Deep Shetye",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",

@@ -31,7 +31,9 @@ const images = [
   "HTML",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "React",
+  "ReactNative",
   "Next.js",
   "TailwindCSS",
   "Node.js",
@@ -81,6 +83,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
           <div className="flex flex-col md:flex-row md:justify-between md:max-h-[80vh] md:py-24 items-center">
             <div className="text-left mt-8 md:mt-0">
               <h2 className="text-3xl text-teal-600 font-medium dark:text-teal-400 md:text-4xl">
@@ -156,7 +159,7 @@ export default function Home() {
 
         <section className="mt-4">
           <div>
-            <h3 className="text-2xl mb-3 dark:text-white">Services i offer</h3>
+            <h3 className="text-2xl mb-2 dark:text-white">Services i offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance developer,
               I&apos;ve done remote work for
@@ -166,49 +169,47 @@ export default function Home() {
               for both business and consumer use.
             </p>
           </div>
+
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl mb-10 mt-6 dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
+                Beautiful Frontend
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                From creating elegant ui designs to building them. I can help
+                you with both.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="pt-3 pb-1 text-teal-600">Frontend Tools I Use</h4>
+              <span className="text-gray-800 ml-1">
+                Figma, ReactJS, React Native, NextJS, TailwindCSS
+              </span>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl mb-10 mt-6 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
-              </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let&apos;s make
-                it a reality.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
+
             <div className="text-center shadow-lg p-10 rounded-xl mb-10 mt-6 dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Robust Backend</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                A good backend is the backbone of any application. I can help
+                you build one.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="pt-3 pb-1 text-teal-600">Backend Tech I Use</h4>
+              <span className="text-gray-800 ml-1">
+                NodeJs, Express, Firebase, PostgreSQL, MongoDB
+              </span>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl mb-10 mt-6 dark:bg-white flex-1">
+              <Image src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">DevOps</h3>
+              <p className="py-2">
+                Well, I can host your your websites and apps too. I can help you
+                with that.
+              </p>
+              <h4 className="pt-3 pb-1 text-teal-600">DevOps</h4>
+              <span className="text-gray-800 ml-1">
+                Docker, AWS, Vercel, Github, Gitlab
+              </span>
             </div>
           </div>
         </section>

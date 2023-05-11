@@ -8,7 +8,12 @@ const Header = ({ setDarkMode }) => {
 
   return (
     <nav className="py-6 flex justify-between dark:text-white">
-      <h1 className="font-burtons text-xl">deepshetye</h1>
+      <div
+        onClick={() => router.push('/')}
+        className="font-burtons text-xl cursor-pointer"
+      >
+        deepshetye
+      </div>
 
       <ul className="flex items-center">
         <li

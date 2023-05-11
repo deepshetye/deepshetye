@@ -35,7 +35,19 @@ const tabs = [
       },
     ],
   },
-  { name: 'Freelance', projects: [] },
+  {
+    name: 'Freelance',
+    projects: [
+      {
+        name: 'Sovi',
+        description:
+          'Led a frontend team of 3 people to design a website that deals with property brokerage and its listing. ( Sub Company of Celetel )',
+        duration: 'Feb 2022 - Jun 2022',
+        stacks: ['cd', 'vf', 'vdfv'],
+      },
+    ],
+  },
+  { name: 'Hackathons', projects: [] },
   { name: 'Projects', projects: [] },
 ];
 
@@ -51,6 +63,7 @@ const Work = () => {
         <div className="flex gap-5 justify-center">
           {tabs.map((tab, index) => (
             <div
+              key={index}
               className={`text-center border-b cursor-pointer ${
                 step === index ? 'border-white' : 'border-transparent'
               } text-white`}
@@ -69,7 +82,10 @@ const Work = () => {
 
         <div className="grid grid-cols-3 gap-4 py-7">
           {tabs[step].projects.map((project, index) => (
-            <div className="p-4 border border-[#ffffff50] bg-gradient-to-br from-[#ffffff20] to-[#ffffff09] text-white rounded-md">
+            <div
+              key={index}
+              className="p-4 border border-[#ffffff50] bg-gradient-to-br from-[#ffffff20] to-[#ffffff09] text-white rounded-md"
+            >
               <div className="border-b flex justify-between items-center border-gray-400 pb-2">
                 <div className="flex gap-1">
                   <div className="bg-red-600 rounded-full h-3 w-3" />
@@ -89,7 +105,10 @@ const Work = () => {
 
                 <div className="flex flex-wrap gap-1 mt-2">
                   {project.stacks.map((stack, i) => (
-                    <div className="bg-[#ffffff30] px-2 rounded-sm text-sm">
+                    <div
+                      key={index}
+                      className="bg-[#ffffff30] px-2 rounded-sm text-sm"
+                    >
                       {stack}
                     </div>
                   ))}

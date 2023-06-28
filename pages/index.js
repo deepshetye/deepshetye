@@ -1,16 +1,5 @@
-import Head from 'next/head';
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from 'react-icons/ai';
-import {
-  BsCode,
-  BsFillMoonStarsFill,
-  BsGithub,
-  BsLinkedin,
-  BsTwitter,
-} from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import { SiLeetcode } from 'react-icons/si';
 import { useState } from 'react';
 import deved from '../public/dev-ed-wave.png';
 import code from '../public/code.png';
@@ -59,7 +48,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <main className=" bg-[#F7F9FC] px-8 font-ubermove dark:bg-black md:px-20">
+      <main className=" bg-[#F7F9FC] px-5 font-ubermove dark:bg-black md:px-20">
         <Header setDarkMode={setDarkMode} />
 
         <section className="">
@@ -100,7 +89,7 @@ export default function Home() {
                   </a>
                 </div>
 
-                <div className="text-2xl cursor-pointer flex pr-5 py-2 text-gray-600 hover:text-black hover:dark:text-white dark:text-gray-400">
+                {/* <div className="text-2xl cursor-pointer flex pr-5 py-2 text-gray-600 hover:text-black hover:dark:text-white dark:text-gray-400">
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -108,7 +97,7 @@ export default function Home() {
                   >
                     <BsTwitter />
                   </a>
-                </div>
+                </div> */}
 
                 <div className="text-2xl cursor-pointer flex py-2 text-gray-600 hover:text-black hover:dark:text-white dark:text-gray-400">
                   <a
@@ -116,7 +105,7 @@ export default function Home() {
                     rel="noreferrer"
                     href="https://leetcode.com/deepshetye"
                   >
-                    <BsCode />
+                    <SiLeetcode />
                   </a>
                 </div>
               </div>

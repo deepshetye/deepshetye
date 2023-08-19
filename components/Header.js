@@ -43,7 +43,7 @@ const Header = ({ setDarkMode }) => {
           <li>
             <a
               className="hidden md:block bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md mr-5 ml-2"
-              href="https://db.sh/deep"
+              href="https://dub.sh/deep"
               target="_blank"
               rel="noreferrer"
             >
@@ -85,7 +85,7 @@ const Header = ({ setDarkMode }) => {
         </div>
 
         <a
-          href="https://db.sh/deep"
+          href="https://dub.sh/deep"
           target="_blank"
           rel="noreferrer"
           className="cursor-pointer"

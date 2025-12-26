@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { SiLeetcode } from 'react-icons/si';
 import { BsLink, BsLink45Deg } from 'react-icons/bs';
+import { useDarkMode } from '../context/DarkModeContext';
 
 const About = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const { darkMode } = useDarkMode();
 
   return (
-    // <div className={darkMode ? 'dark' : ''}>
-    <div className="dark">
+    <div className={darkMode ? 'dark' : ''}>
       <main className="bg-[#F7F9FC] px-5 md:h-screen flex flex-col font-ubermove dark:bg-black md:px-20">
-        <Header setDarkMode={setDarkMode} />
+        <Header />
 
-        <div className="text-white flex flex-col md:grid grid-cols-12 gap-8 flex-1 overflow-hidden">
-          <div className="col-span-5 flex flex-col items-center bg-[#201E20] rounded-lg md:rounded-3xl p-5 md:p-10">
+        <div className="text-black dark:text-white flex flex-col md:grid grid-cols-12 gap-8 flex-1 overflow-hidden">
+          <div className="col-span-5 flex flex-col items-center bg-gray-100 dark:bg-[#201E20] rounded-lg md:rounded-3xl p-5 md:p-10">
             <div className="rounded-lg md:rounded-[40px] h-56 w-56 overflow-hidden mx-auto mb-4">
               <img src="dp.jpeg" className="h-56 w-56" />
             </div>
@@ -28,7 +28,7 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/deepshetye"
-                className="bg-[#3e3d3e] h-10 w-10 rounded-full flex items-center justify-center"
+                className="bg-gray-300 dark:bg-[#3e3d3e] h-10 w-10 rounded-full flex items-center justify-center"
               >
                 <FaLinkedinIn size={20} />
               </a>
@@ -37,7 +37,7 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/deepshetye"
-                className="bg-[#3e3d3e] h-10 w-10 rounded-full flex items-center justify-center"
+                className="bg-gray-300 dark:bg-[#3e3d3e] h-10 w-10 rounded-full flex items-center justify-center"
               >
                 <FiGithub size={20} />
               </a>
@@ -46,7 +46,7 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://leetcode.com/deepshetye"
-                className="bg-[#3e3d3e] h-10 w-10 rounded-full flex items-center justify-center"
+                className="bg-gray-300 dark:bg-[#3e3d3e] h-10 w-10 rounded-full flex items-center justify-center"
               >
                 <SiLeetcode size={20} />
               </a>
@@ -56,7 +56,7 @@ const About = () => {
 
             <div className="w-full flex-col md:flex-row flex justify-between md:items-center">
               <div className="">Expertise :</div>
-              <div>UI Designing, Frontend Development</div>
+              <div>Mobile Development, Full Stack Development</div>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ const About = () => {
             <div className="opacity-70 text-sm">
               Bachelor Of Technology in Electronics and Communication
             </div>
-            <div className="opacity-70 text-sm">2020 - 2024</div>
+            <div className="opacity-70 text-sm">Dec 2020 - May 2024 | GPA: 8.6/10</div>
 
             <div className="opacity-70 text-sm underline mt-7">
               ACHIEVEMENTS

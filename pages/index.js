@@ -1,6 +1,6 @@
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { SiLeetcode } from 'react-icons/si';
-import { useState } from 'react';
+import { useDarkMode } from '../context/DarkModeContext';
 import deved from '../public/dev-ed-wave.png';
 import code from '../public/code.png';
 import design from '../public/design.png';
@@ -18,25 +18,25 @@ import { useRouter } from 'next/router';
 import Header from '../components/Header';
 
 const images = [
-  'C++',
-  'Figma',
-  'HTML',
-  'CSS',
-  'JavaScript',
+  'React Native',
   'TypeScript',
+  'JavaScript',
   'React',
-  'ReactNative',
   'Next.js',
-  'TailwindCSS',
   'Node.js',
-  'Express.js',
-  'Git',
-  'GitHub',
+  'AWS',
   'Docker',
-  'Firebase',
-  'MongoDB',
   'PostgreSQL',
-  'MySQL',
+  'MongoDB',
+  'Firebase',
+  'Redux',
+  'TailwindCSS',
+  'NestJS',
+  'Python',
+  'OpenAI',
+  'Supabase',
+  'Git',
+  'C++',
 ].map((image, i) => ({
   id: i,
   image,
@@ -44,12 +44,12 @@ const images = [
 
 export default function Home() {
   const router = useRouter();
-  const [darkMode, setDarkMode] = useState(true);
+  const { darkMode } = useDarkMode();
 
   return (
     <div className={darkMode ? 'dark' : ''}>
       <main className=" bg-[#F7F9FC] px-5 font-ubermove dark:bg-black md:px-20">
-        <Header setDarkMode={setDarkMode} />
+        <Header />
 
         <section className="">
           <div className="flex flex-col md:flex-row md:justify-between md:max-h-[80vh] md:py-24 items-center">
@@ -61,12 +61,13 @@ export default function Home() {
                 I&apos;m <span className="font-semibold">Deep Shetye.</span>
               </h2>
               <h3 className="text-xl mt-4 dark:text-white md:text-3xl">
-                Full Stack Developer and UI Designer.
+                Senior Mobile Engineer & Full Stack Developer.
               </h3>
               <p className="text-md pt-1 pb-3 md:py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-                I speak in {'<Code/>'} so you don&apos;t have to. Helping people
-                turn their ideas into sites & apps that work. Connect with me
-                and let&apos;s get cracking!
+                4+ years leading cross-functional teams building scalable
+                banking apps and AI-powered platforms. Currently Head of Mobile
+                Development at ImpactoDigifin, architecting systems serving
+                5,000+ users.
               </p>
               <div className="flex justify-center md:justify-start">
                 <div className="text-2xl cursor-pointer flex pr-6 py-2 text-gray-600 hover:text-black hover:dark:text-white dark:text-gray-400">
@@ -300,7 +301,7 @@ export default function Home() {
                 Engineering
               </div>
               <div className="dark:text-[#ffffff80] text-gray-500 text-sm">
-                2020 - 2024
+                Dec 2020 - May 2024 | GPA: 8.6/10
               </div>
 
               <img

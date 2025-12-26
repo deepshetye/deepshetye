@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { useDarkMode } from '../context/DarkModeContext';
 
-const Header = ({ setDarkMode }) => {
+const Header = () => {
+  const { toggleDarkMode } = useDarkMode();
   const router = useRouter();
 
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className="sticky top-0 flex flex-col z-50">
-      <nav className="py-6 flex justify-between bg-black z-50 dark:text-white">
+      <nav className="py-6 flex justify-between bg-[#F7F9FC] dark:bg-black z-50 text-black dark:text-white">
         <div
           onClick={() => router.push('/')}
           className="font-burtons text-xl cursor-pointer"
@@ -53,7 +55,7 @@ const Header = ({ setDarkMode }) => {
 
           <li>
             <BsFillMoonStarsFill
-              onClick={() => setDarkMode((prev) => !prev)}
+              onClick={toggleDarkMode}
               className=" cursor-pointer text-2xl"
             />
           </li>
@@ -68,7 +70,7 @@ const Header = ({ setDarkMode }) => {
       </nav>
 
       <div
-        className={`bg-white ${
+        className={`bg-white dark:bg-gray-800 text-black dark:text-white ${
           showMenu ? 'h-auto p-2 px-4' : 'h-0'
         } transition-all duration-400 overflow-hidden flex flex-col gap-1`}
       >
